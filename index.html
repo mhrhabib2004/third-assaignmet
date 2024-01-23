@@ -15,28 +15,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <!-- font aswome -->
-        <script src="https://kit.fontawesome.com/2a12a2fc32.js" crossorigin="anonymous"></script>
+    <!-- font aswome -->
+    <script src="https://kit.fontawesome.com/2a12a2fc32.js" crossorigin="anonymous"></script>
 
-        <!-- telwind custom class -->
-        <script>
-            tailwind.config = {
-              theme: {
+    <!-- telwind custom class -->
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                    'button-all': '#FF4240',
-                  }
+                    colors: {
+                        clifford: '#da373d',
+                        'button-all': '#FF4240',
+                    }
                 }
-              }
             }
-          </script>
+        }
+    </script>
 
-        <style>
-            .manrope-font{
-                font-family: 'Manrope', sans-serif;
-            }
-        </style>
+    <style>
+        .manrope-font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
 </head>
 
@@ -45,42 +45,577 @@
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                    <a class="btn btn-ghost text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 font-bold ">
-                    <li><a class="hover:text-[#FF4240]">Home</a></li>
-                      <li><a class="hover:text-[#FF4240]">About</a></li>
-                      <li><a class="hover:text-[#FF4240]">Pages</a></li>
-                      <li><a class="hover:text-[#FF4240]">Blog</a></li>
-                      <li><a class="hover:text-[#FF4240]">Contact</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1 font-bold ">
+                        <li><a class="hover:text-[#FF4240]">Home</a></li>
+                        <li><a class="hover:text-[#FF4240]">About</a></li>
+                        <li><a class="hover:text-[#FF4240]">Pages</a></li>
+                        <li><a class="hover:text-[#FF4240]">Blog</a></li>
+                        <li><a class="hover:text-[#FF4240]">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end gap-3">
                     <div class="invisible lg:visible"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                  <a class="btn bg-button-all text-white ">Button</a>
+                    <a class="btn bg-button-all text-white font-bold  ">Button</a>
                 </div>
-              </div>
+            </div>
         </nav>
 
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- start slider -->
+        <section class="mt-6 lg:mt-12">
+
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-2">
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-2">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-2">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 gap-2">
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card w-auto lg:w-1/4 lg:h-auto bg-[#131318]  lg:ml-auto lg:-mt-48 lg:mr-12 mt-4">
+                <div class="card-body items-center text-center">
+                    <h2 class="font-extrabold text-white"> sport usually involving skill</h2>
+                    <p class="font-medium text-white "> informative, easy to understand, and clearly structured as it
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- end slider -->
+        <!-- stsrt persent -->
+        <section class="lg:mt-24 container mx-auto">
+
+            <div class="text-center ">
+                <h1 class=" font-extrabold text-4xl ">Professional Hockeys Club</h1>
+                <p class="font-medium pt-6 ">informative, easy to understand, and clearly structured as it easy to
+                    understand,<br> and clearly structured as it
+                </p>
+            </div>
+
+            <div class=" text-center lg:flex gap-4 ">
+                <div class="mt-10">
+                    <div class="radial-progress text-red-400 -rotate-180" style="--value:81;" role="progressbar"><span
+                            class="rotate-180 font-extrabold text-2xl">81%</span></div>
+                    <h2 class="pt-3">Prayer Facility</h2>
+                    <p class="pt-3 ">clearly structured as it easy to understand </p>
+                </div>
+                <div class="mt-10">
+                    <div class="radial-progress text-green-400 -rotate-180" style="--value:95;" role="progressbar"><span
+                            class="rotate-180 font-extrabold text-2xl">95%</span></div>
+                    <h2 class="pt-3">Experienced Coach</h2>
+                    <p class="pt-3">clearly structured as it easy to understand</p>
+                </div>
+                <div class="mt-10">
+                    <div class="radial-progress text-amber-400 -rotate-180 " style="--value:90 ;" role="progressbar ">
+                        <span class="rotate-180 font-extrabold text-2xl">90%</span>
+                    </div>
+                    <h2 class="pt-3">Senior Player</h2>
+                    <p class="pt-3">clearly structured as it easy to understand</p>
+                </div>
+                <div class="mt-10 ">
+                    <div class="radial-progress text-blue-600 -rotate-180" style="--value:80;" role="progressbar"><span
+                            class="rotate-180 font-extrabold text-2xl">80%</span></div>
+                    <h2 class="pt-3">Training Ground</h2>
+                    <p class="pt-3">clearly structured as it easy to understand </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- end persent -->
+        <!-- stsrt pogram section -->
+        <section class="lg:mt-24 container">
+            <div class="justify-center">
+                <div class="text-center ">
+                    <h1 class=" font-extrabold text-4xl ">Program Sections</h1>
+                    <p class="font-medium pt-6 ">informative, easy to understand, and clearly structured as it easy to
+                        understand,<br> and clearly structured as it
+                    </p>
+                </div>
+            </div>
+            <div class=" container mx-auto">
+                <div class="  lg:grid grid-cols-2 mt-16 lg:ml-10 ">
+                    <div class="card max-w-xl bg-base-100 shadow-xl image-full  ">
+                        <figure><img src="Images/2.png" alt="Junior Program" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title pt-24">Junior Program</h2>
+                            <p>clearly structured as it easy to understandclearly structured as it easy to
+                                understandclearly structured as it easy to understand</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-[#FF4240] border-none">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card max-w-xl bg-base-100 shadow-xl image-full ">
+                        <figure><img src="Images/3.png" alt="Junior Program" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title pt-24">Junior Program</h2>
+                            <p>clearly structured as it easy to understandclearly structured as it easy to
+                                understandclearly structured as it easy to understand</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-[#FF4240] border-none">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" container mt-7 grid-cols-1">
+                    <div class="card max-w-6xl bg-base-100 shadow-xl image-full m-auto ">
+                        <figure><img src="Images/4.png" alt="Junior Program" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title pt-40">Junior Program</h2>
+                            <p>clearly structured as it easy to understandclearly structured <br>as it easy to
+                                understandclearly structured as it easy to understand</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-[#FF4240] border-none">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Prodect section -->
+        <section class="mt-10">
+            <!-- Product titel -->
+            <div class="text-center leading-7 p-12">
+                <h1 class="text-[#131318] font-extrabold text-2xl">Our New Products</h1>
+                <p class="text-[#131318] font-medium mt-4 ">amader chuto gay chuto chuto gor taki seta sobe mile nahi
+                    keho por parar sokol <br> ek sate kheli ar patshalay aki seta sobe mile </p>
+            </div>
+
+            <!-- card section -->
+            <div class="grid lg:grid-cols-2 gap-8 items-center justify-center ">
+                <!-- card-1 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">World Cup Flags Football
+                        </h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4 ">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2 ">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">World Cup Flags Football
+                        </h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/7.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">Cap For Hockeys</h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/8.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">World Cup Flags Football
+                        </h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/9.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">World Cup Flags Football
+                        </h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="card card-side bg-base-100 shadow-xl p-4 lg:p-8 border border-[#1313181A]">
+                    <figure><img src="./images/10.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex space-x-4">
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-solid fa-star text-[#F99808]"></i>
+                                <h4 class="text-[#13131880] font-medium">5.0</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-eye text-[#13131880]"></i>
+                                <h4 class="text-[#13131880] font-medium">20</h4>
+                            </div>
+                            <div class="flex space-x-2 items-center">
+                                <i class="fa-regular fa-heart"></i>
+                                <h4 class="text-[#13131880] font-medium">200</h4>
+                            </div>
+                        </div>
+                        <h2 class="card-title lg:text-[#131318] lg:font-extrabold lg:text-lg">World Cup Flags Football
+                        </h2>
+                        <p class="text-[#13131899] font-medium text-base">amar sunar bangla, ami tumay <br> balobasi</p>
+                        <div class="lg:flex lg:space-x-4">
+                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                            <div class="flex space-x-2">
+                                <img src="./icon/Frame.png" alt="">
+                                <h4 class="text-[#13131880] font-medium">Delivery Fee : Free</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Prodect section end -->
+
+        <!--Clients Question start  -->
+        <section class="mt-10">
+            <div class="text-center leading-7 p-12">
+                <h1 class="text-[#131318] font-extrabold text-2xl">Clients Question</h1>
+                <p class="text-[#131318] font-medium mt-4 ">amader chuto gay chuto chuto gor taki seta sobe mile nahi
+                    keho por parar sokol <br> ek sate kheli ar patshalay aki seta sobe mile </p>
+
+            <div class="hero min-h-screen ">
+                <div class="hero-content lg:gap-10 flex-col lg:flex-row">
+                  <img src="Images/11.png" class="lg:max-w-sm rounded-lg shadow-2xl" />
+                  <div class="text-left">
+                    <div class="collapse collapse-plus  ">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p> involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <!--Clients Question end  -->
+
+        <!-- Get In Touch start -->
+        
+        <section class="">
+            <!-- Inpute section -->
+            <div class="text-center leading-7 p-12">
+               <h1 class="text-[#131318] font-extrabold text-2xl">Get In Touch</h1>
+               <p class="text-[#131318] font-medium mt-4 ">amader chuto gay chuto chuto gor taki seta sobe mile nahi keho por parar sokol  <br> ek sate kheli ar patshalay aki seta sobe mile  </p>
+           </div>
+
+           <div class="grid lg:grid-cols-2 items-center justify-center gap-8">
+               <!-- first grid section -->
+               <div class="grid gap-12 justify-center items-center">
+                   <!-- part 1 -->
+                   <div class="card w-96 bg-base-100 shadow-xl bg-[#BCED6D1A]">
+                       <div class="p-8">
+                           <img class="" src="Images/Group 1171275317.png" alt="">
+                         <h2 class=" text-[#13131899] font-extrabold text-lg">Phone Number : <br> <span class="text-[#131318]">(+62) 123-321-543</span><h2>
+                       </div>
+                   </div>
+                   <!-- part 2 -->
+                   <div class="card w-96 bg-base-100 shadow-xl bg-[#FDDD5F1A]">
+                       <div class="p-8">
+                           <img class="" src="Images/Group 1171275318.png" alt="">
+                         <h2 class=" text-[#13131899] font-extrabold text-lg">Email :<br> <span class="text-[#131318]">hockeys@support.com</span><h2>
+                       </div>
+                   </div>
+                   <!-- part 3 -->
+                   <div class="card w-96 bg-base-100 shadow-xl bg-[#629CF31A]">
+                       <div class="p-8">
+                           <img class="" src="Images/Group 1171275321.png" alt="">
+                         <h2 class=" text-[#13131899] font-extrabold text-lg">Location : <br> <span class="text-[#131318]"> 152/1 Mohakhali Wireless Gate</span><h2>
+                       </div>
+                   </div>
+               </div>
+               <div>
+                   <div class="grid">
+                       <div class="grid lg:grid-cols-2 justify-center gap-8">
+                           <!-- input 1 -->
+                           <label class="form-control w-full ">
+                               <div class="label">
+                                 <span class=" text-[#131318] font-bold text-xl">your name</span>
+                               </div>
+                               <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs text-[#1313184D] bg-[#13131808] border-none" />
+                             </label>
+                           <!-- input 2 -->
+                           <label class="form-control w-full ">
+                               <div class="label">
+                                 <span class=" text-[#131318] font-bold text-xl">Your Email</span>
+                               </div>
+                               <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs text-[#1313184D] bg-[#13131808] border-none" />
+                             </label>
+                           <!-- input 3 -->
+                           <label class="form-control w-full">
+                               <div class="label">
+                                 <span class=" text-[#131318] font-bold text-xl">Subject</span>
+                               </div>
+                               <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs text-[#1313184D] bg-[#13131808] border-none" />
+                             </label>
+                           <!-- input 4 -->
+                           <label class="form-control w-full">
+                               <div class="label">
+                                 <span class=" text-[#131318] font-bold text-xl">Phone Number</span>
+                               </div>
+                               <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs text-[#1313184D] bg-[#13131808] border-none" />
+                             </label>
+                       </div>
+                       <div>
+                           <!-- massege aria -->
+                           <div class="label">
+                               <span class=" text-[#131318] font-bold text-xl">Message</span>
+                           </div>
+                           <article class="text-wrap ... h-72 bg-[#13131808] rounded-xl">
+                               <h3 class="text-[#1313184D] p-8">Write your message</h3>
+                           </article>
+                       </div>
+                       <button class="btn btn-block bg-[#FF4240] text-[#FFFFFF] mt-4">Send Message</button>
+                   </div>
+               </div>
+           </div>
+
+           <!-- input media section -->
+           <div class="grid justify-center gap-6 p-6 mt-12 mb-12 bg-[#13131808] leading-5 rounded-xl">
+               <h2 class="font-extrabold text-[#131318] text-2xl">Social Media</h2>
+               <img class="" src="Images/Social.png" alt="">
+           </div>
+       </section>
+
+
 
     </main>
-    <footer>
-
+    <footer class="grid lg:grid-cols-5 footer p-10 bg-[#131318] gap-10 justify-items-center lg:justify-items-start mt-10">
+        <div class="grid lg:col-span-2 space-y-4 text-center">
+            <h2 class="font-extrabold text-white text-2xl text-center  ">Get In Touch</h2>
+            <p class="font-medium text-[#FFFFFF99] text-base"> involving skill, knowledge, or chance, in which you
+                follow fixed rules and try to win against an opponent or to solve a puzzle. </p>
+            <div class="flex items-center gap-2 ">
+                <i class="fa-regular fa-envelope text-red-500"></i>
+                <p class=" font-medium text-[#FFFFFF99] text-base ">
+                    hockeys@support.com
+                </p>
+            </div>
+            <div class="flex items-center gap-2 ">
+                <i class="fa-solid fa-phone text-red-500"></i>
+                <p class=" font-medium text-[#FFFFFF99] text-base ">
+                    (+62) 123-321-543
+                </p>
+            </div>
+        </div>
+        <nav>
+            <header class="footer-title text-white font-extrabold text-lg">Company</header>
+            <a class="link link-hover text-[#FFFFFF99] text-base">About us</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Leadership</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Careers</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">News & Article</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base"> Legal Notice</a>
+        </nav>
+        <nav>
+            <header class="footer-title text-white font-extrabold text-lg">Support</header>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Help Center</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">FAQ</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Ticket Support</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Contact Us</a>
+        </nav>
+        <nav>
+            <header class="footer-title text-white font-extrabold text-lg">Services</header>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Academy</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Group Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Private Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Hockeys for kids</a>
+            <a class="link link-hover text-[#FFFFFF99] text-base">Hockeys for Adult</a>
+        </nav>
     </footer>
 
 </body>
